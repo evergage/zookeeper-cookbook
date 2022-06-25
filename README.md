@@ -40,7 +40,7 @@ Parameters:
 * `version`: Version of ZooKeeper to install
 * `username`: The user who will eventually run Zookeeper (default: `'zookeeper'`)
 * `user_home`: Path to the home folder for the Zookeeper user (default: `/home/zookeeper`)
-* `mirror`: The mirror to obtain ZooKeeper from (required)
+* `mirror`: The base URL to obtain ZooKeeper from (default: `'http://archive.apache.org/dist/zookeeper'`)
 * `checksum`: Checksum for the ZooKeeper download file
 * `install_dir`: Which directory to install Zookeeper to (default: `'/opt/zookeeper'`)
 * `java_version`: The version of OpenJDK to install.
@@ -48,11 +48,11 @@ Parameters:
 
 Example:
 
-``` ruby
+```ruby
 zookeeper 'zookeeper' do
   version  '3.4.8'
   username 'zookeeper'
-  mirror   'http://www.poolsaboveground.com/apache/zookeeper'
+  mirror   'http://archive.apache.org/dist/zookeeper'
   checksum 'f10a0b51f45c4f64c1fe69ef713abf9eb9571bc7385a82da892e83bb6c965e90'
   action   :install
 end

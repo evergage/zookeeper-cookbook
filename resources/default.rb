@@ -18,7 +18,7 @@
 # limitations under the License.
 
 property :version,             String, default: '3.6.1'
-property :mirror,              String, default: 'http://archive.apache.org/dist/zookeeper/'
+property :mirror,              String, default: 'http://archive.apache.org/dist/zookeeper'
 property :checksum,            String
 property :username,            String, default: 'zookeeper'
 property :user_home,           String, default: '/home/zookeeper'
@@ -53,8 +53,14 @@ action :install do
     recursive true
   end
 
+  artifact = if Gem::Requirement.new('>= 3.5.0').satisfied_by? Gem::Version.new(new_resource.version)
+               "apache-zookeeper-#{new_resource.version}-bin.tar.gz"
+             else
+               "zookeeper-#{new_resource.version}.tar.gz"
+             end
+
   ark 'zookeeper' do
-    url         "#{new_resource.mirror}/zookeeper-#{new_resource.version}/apache-zookeeper-#{new_resource.version}-bin.tar.gz"
+    url         "#{new_resource.mirror}/zookeeper-#{new_resource.version}/#{artifact}"
     version     new_resource.version
     prefix_root new_resource.install_dir
     prefix_home new_resource.install_dir
