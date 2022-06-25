@@ -13,6 +13,6 @@ supports         'ubuntu', '>= 18.04'
 supports         'centos', '>= 7.0'
 supports         'redhat', '>= 7.0'
 
-depends          'java', '~> 8.2'
+depends          'java', '~> 10.2'
 depends          'magic', '>= 1.1'
-depends          'ark', '~> 5.0'
+depends          'ark', '~> 6.0'
