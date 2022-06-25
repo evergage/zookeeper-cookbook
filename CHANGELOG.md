@@ -2,6 +2,15 @@
 
 This file is used to list changes made in each version of zookeeper.
 
+## 15.0.0
+
+* Drop Ubuntu 16.04 support
+* Upgrade `ark` cookbook to v6.x
+* Upgrade `java` cookbook to v10.x
+  * The v11.x release is the current one, but it drops Chef 15 support, so we’re staying a little behind for backwards-compat
+* Update & clean up supporting config files, based on what @Sous-Chefs uses
+* Move cookbook to @jeffbyrnes personal fork due to loss of write privileges to @evertrue copy
+
 ## 14.0.0
 
 * Drop Chef 13 support; it is EOL as of April 2020
