@@ -15,4 +15,4 @@ supports         'redhat', '>= 7.0'
 
 depends          'java', '~> 8.2'
 depends          'magic', '>= 1.1'
-depends          'ark', '~> 5.0'
+depends          'ark', '~> 6.0'
