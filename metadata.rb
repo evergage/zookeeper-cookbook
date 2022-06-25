@@ -6,8 +6,8 @@ description      'Installs/Configures zookeeper'
 version          '14.0.0'
 chef_version     '>= 15.3'
 
-issues_url 'https://github.com/evertrue/zookeeper-cookbook/issues'
-source_url 'https://github.com/evertrue/zookeeper-cookbook/'
+issues_url 'https://github.com/jeffbyrnes/zookeeper-cookbook/issues'
+source_url 'https://github.com/jeffbyrnes/zookeeper-cookbook/'
 
 supports         'ubuntu', '>= 18.04'
 supports         'centos', '>= 7.0'

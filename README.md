@@ -1,6 +1,6 @@
 # zookeeper cookbook
 
-![ci](https://github.com/evertrue/zookeeper-cookbook/workflows/ci/badge.svg)
+![ci](https://github.com/jeffbyrnes/zookeeper-cookbook/workflows/ci/badge.svg)
 [![Cookbook Version](https://img.shields.io/cookbook/v/zookeeper.svg)](https://supermarket.chef.io/cookbooks/zookeeper)
 
 ## Table of Contents
