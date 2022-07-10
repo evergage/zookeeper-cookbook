@@ -3,7 +3,7 @@ maintainer       'Jeff Byrnes'
 maintainer_email 'thejeffbyrnes@gmail.com'
 license          'Apache-2.0'
 description      'Installs/Configures zookeeper'
-version          '15.0.0'
+version          '16.0.0'
 chef_version     '>= 16.0'
 
 issues_url 'https://github.com/jeffbyrnes/zookeeper-cookbook/issues'

@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of zookeeper.
 
+## 16.0.0
+
+* Upgrade `java` cookbook to v11.x
+  * Requires Chef >= v16.0
+
 ## 15.0.0
 
 * Drop Ubuntu 16.04 support
