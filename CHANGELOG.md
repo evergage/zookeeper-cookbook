@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of zookeeper.
 
+## v11.1.1
+
+* Restore SysV support.
+
 ## v11.1.0
 
 * Fix compile failure in node resource (#217 h/t @tas50)

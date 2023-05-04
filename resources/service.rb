@@ -82,6 +82,7 @@ action :create do
     end
 
     service_provider = value_for_platform_family(
+      'amazon'  => Chef::Provider::Service::Init::Redhat,
       'rhel'    => Chef::Provider::Service::Init::Redhat,
       'default' => Chef::Provider::Service::Init::Debian
     )
